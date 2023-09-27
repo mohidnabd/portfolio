@@ -156,3 +156,123 @@ input{
     /* font-size:19px; */
     transform:scale(1.5);
 }
+.checkbtn{
+    font-size:30px;
+    color:white;
+    float:right;
+    line-height:80px;
+    /* margin-right:40px; */
+    cursor:pointer;
+    display:none;
+}
+#check{
+    display:none;
+}
+
+
+@media only screen and (max-width:768px){
+ .roof{
+    font-size:30px;
+    padding-left:50px;
+ }
+ nav ul li a{
+    font-size:16px;
+ }
+ .checkbtn{
+    display:block;
+    margin-left:30px;
+ }
+ ul{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:#2c3e50;
+    top:80px;
+    left:-100%;
+    text-align:center;
+    transition:all .5s;
+ }
+ nav ul{
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+
+ }
+ nav ul li{
+    display:block;
+    position: relative;
+    left: -6%;
+    line-height:50px;
+ }
+ nav ul li a{
+    font-size:20px;
+
+ }
+ nav ul li a:hover{
+   background:gray;
+   /* color:black; */
+ }
+ a:hover,a:active
+{
+background:none;
+color:#0082e6;
+}
+.btn{
+    display:none;
+}
+#check:checked ~ ul{
+    left:0;
+}
+.fas{
+    transition: all 0.5s;
+}
+#check:checked + i {
+    transform: rotate(45deg);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.roof{
+    margin-left:unset;
+    position:relative;
+    left:-35px;
+    top:7px;
+}
+.navbar{
+    margin-top:unset;
+}
+.section{
+    width:90%;
+    top:20%;
+}
+.top{
+    font-size:18px;
+}
+.section p{
+    font-size:14px;
+}
+.section input{
+    width:170px;
+    height:30px;
+}
+.bts{
+    top:20px;
+    right:-30px;
+    width:100px;
+    /* bottom:35px; */
+    height:30px;
+    border-radius:8px;
+    text-align:center;
+    font-size:16px;
+    margin-right:20px;
+    margin-top:3px;
+}
+.getWeather{
+    right:unset;
+    top:unset;
+    position:absolute;
+    top:60%;
+    right:31%;
+}
+}
+
+
